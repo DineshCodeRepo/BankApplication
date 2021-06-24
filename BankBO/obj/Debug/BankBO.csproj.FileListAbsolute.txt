@@ -1,0 +1,14 @@
+H:\tcsfinal\tcsminiprojectfinal\BankBO\bin\Debug\BankBO.dll
+H:\tcsfinal\tcsminiprojectfinal\BankBO\bin\Debug\BankBO.pdb
+H:\tcsfinal\tcsminiprojectfinal\BankBO\bin\Debug\BankTypes.dll
+H:\tcsfinal\tcsminiprojectfinal\BankBO\bin\Debug\BankTypes.pdb
+H:\tcsfinal\tcsminiprojectfinal\BankBO\obj\Debug\BankBO.csprojResolveAssemblyReference.cache
+H:\tcsfinal\tcsminiprojectfinal\BankBO\obj\Debug\BankBO.dll
+H:\tcsfinal\tcsminiprojectfinal\BankBO\obj\Debug\BankBO.pdb
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankBO\bin\Debug\BankBO.dll
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankBO\bin\Debug\BankBO.pdb
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankBO\bin\Debug\BankTypes.dll
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankBO\bin\Debug\BankTypes.pdb
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankBO\obj\Debug\BankBO.csprojResolveAssemblyReference.cache
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankBO\obj\Debug\BankBO.dll
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankBO\obj\Debug\BankBO.pdb

@@ -1,0 +1,10 @@
+H:\tcsfinal\tcsminiprojectfinal\BankTypes\bin\Debug\BankTypes.dll
+H:\tcsfinal\tcsminiprojectfinal\BankTypes\bin\Debug\BankTypes.pdb
+H:\tcsfinal\tcsminiprojectfinal\BankTypes\obj\Debug\BankTypes.dll
+H:\tcsfinal\tcsminiprojectfinal\BankTypes\obj\Debug\BankTypes.pdb
+H:\tcsfinal\tcsminiprojectfinal\BankTypes\obj\Debug\BankTypes.csprojResolveAssemblyReference.cache
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankTypes\bin\Debug\BankTypes.dll
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankTypes\bin\Debug\BankTypes.pdb
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankTypes\obj\Debug\BankTypes.csprojResolveAssemblyReference.cache
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankTypes\obj\Debug\BankTypes.dll
+C:\Users\smile\Desktop\tcsminiprojectfinalFinal\BankTypes\obj\Debug\BankTypes.pdb

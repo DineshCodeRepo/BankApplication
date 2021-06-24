@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FFE4B881-6EBB-4891-8803-C264E9CC04A8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>tcsminiprojectfinal</RootNamespace>
+    <AssemblyName>tcsminiprojectfinal</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account-Search Executive.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Account-Search.aspx" />
+    <Content Include="AccountDetials.aspx" />
+    <Content Include="Create Account.aspx" />
+    <Content Include="Customer-Search.aspx" />
+    <Content Include="Delete Account.aspx" />
+    <Content Include="Delete Customer.aspx" />
+    <Content Include="Deposit Money.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="loginMaster.Master" />
+    <Content Include="Transfer Money.aspx" />
+    <Content Include="View Statement by No of transactions .aspx" />
+    <Content Include="View Statement by Start and End Page.aspx" />
+    <Content Include="View Customer.aspx" />
+    <Content Include="AccountExeHomePage.aspx" />
+    <Content Include="CashierHomepage.aspx" />
+    <Content Include="Account Status Cashier.aspx" />
+    <Content Include="Withdraw Money.aspx" />
+    <Content Include="Customer-Account Executive Master.Master" />
+    <Content Include="Cashier_Teller Master.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account Status Gridview.aspx" />
+    <Content Include="Create Customer.aspx" />
+    <Content Include="Customer Status Gridview.aspx" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Update Customer.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account Status Gridview.aspx.cs">
+      <DependentUpon>Account Status Gridview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account Status Gridview.aspx.designer.cs">
+      <DependentUpon>Account Status Gridview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account-Search Executive.aspx.cs">
+      <DependentUpon>Account-Search Executive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account-Search Executive.aspx.designer.cs">
+      <DependentUpon>Account-Search Executive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account-Search.aspx.cs">
+      <DependentUpon>Account-Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account-Search.aspx.designer.cs">
+      <DependentUpon>Account-Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountDetials.aspx.cs">
+      <DependentUpon>AccountDetials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountDetials.aspx.designer.cs">
+      <DependentUpon>AccountDetials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier_Teller Master.Master.cs">
+      <DependentUpon>Cashier_Teller Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cashier_Teller Master.Master.designer.cs">
+      <DependentUpon>Cashier_Teller Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Create Account.aspx.cs">
+      <DependentUpon>Create Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Create Account.aspx.designer.cs">
+      <DependentUpon>Create Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Create Customer.aspx.cs">
+      <DependentUpon>Create Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Create Customer.aspx.designer.cs">
+      <DependentUpon>Create Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Status Gridview.aspx.cs">
+      <DependentUpon>Customer Status Gridview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer Status Gridview.aspx.designer.cs">
+      <DependentUpon>Customer Status Gridview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer-Account Executive Master.Master.cs">
+      <DependentUpon>Customer-Account Executive Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer-Account Executive Master.Master.designer.cs">
+      <DependentUpon>Customer-Account Executive Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer-Search.aspx.cs">
+      <DependentUpon>Customer-Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer-Search.aspx.designer.cs">
+      <DependentUpon>Customer-Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Account.aspx.cs">
+      <DependentUpon>Delete Account.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delete Account.aspx.designer.cs">
+      <DependentUpon>Delete Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delete Customer.aspx.cs">
+      <DependentUpon>Delete Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delete Customer.aspx.designer.cs">
+      <DependentUpon>Delete Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deposit Money.aspx.cs">
+      <DependentUpon>Deposit Money.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deposit Money.aspx.designer.cs">
+      <DependentUpon>Deposit Money.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginMaster.Master.cs">
+      <DependentUpon>loginMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginMaster.Master.designer.cs">
+      <DependentUpon>loginMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transfer Money.aspx.cs">
+      <DependentUpon>Transfer Money.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfer Money.aspx.designer.cs">
+      <DependentUpon>Transfer Money.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Update Customer.aspx.cs">
+      <DependentUpon>Update Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Update Customer.aspx.designer.cs">
+      <DependentUpon>Update Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View Statement by No of transactions .aspx.cs">
+      <DependentUpon>View Statement by No of transactions .aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View Statement by No of transactions .aspx.designer.cs">
+      <DependentUpon>View Statement by No of transactions .aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View Statement by Start and End Page.aspx.cs">
+      <DependentUpon>View Statement by Start and End Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View Statement by Start and End Page.aspx.designer.cs">
+      <DependentUpon>View Statement by Start and End Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View Customer.aspx.cs">
+      <DependentUpon>View Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View Customer.aspx.designer.cs">
+      <DependentUpon>View Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountExeHomePage.aspx.cs">
+      <DependentUpon>AccountExeHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccountExeHomePage.aspx.designer.cs">
+      <DependentUpon>AccountExeHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CashierHomepage.aspx.cs">
+      <DependentUpon>CashierHomepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CashierHomepage.aspx.designer.cs">
+      <DependentUpon>CashierHomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account Status Cashier.aspx.cs">
+      <DependentUpon>Account Status Cashier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account Status Cashier.aspx.designer.cs">
+      <DependentUpon>Account Status Cashier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Withdraw Money.aspx.cs">
+      <DependentUpon>Withdraw Money.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Withdraw Money.aspx.designer.cs">
+      <DependentUpon>Withdraw Money.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankBLL\BankBLL.csproj">
+      <Project>{076535fe-3fec-4006-9fd3-1e607cf4153e}</Project>
+      <Name>BankBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankDAL\BankDAL.csproj">
+      <Project>{20559c52-86b4-4346-b698-d3c0077ed2ac}</Project>
+      <Name>BankDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BankTypes\BankTypes.csproj">
+      <Project>{644d4a4a-df13-4899-8112-81f00067e8f7}</Project>
+      <Name>BankTypes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64602</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64602/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

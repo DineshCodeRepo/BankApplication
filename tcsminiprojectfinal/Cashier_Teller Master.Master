@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cashier_Teller Master.master.cs" Inherits="ProductBacklog.Cashier_Teller_Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<style>
+        .header
+        {
+            width:100%;
+            height:200px;
+            background-color:black;
+        }
+        .menu{
+            background-color:yellow;
+            color:black;
+            font-size:large;
+        }
+        .h5{
+            color:yellow;
+            text-align:left;
+
+        }
+        .p{
+            color:white;
+            vertical-align:top;
+            text-align:left;
+        }
+        .content{
+            background-color:gray;
+        }
+        
+    </style>
+</head>
+     
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width:100%">
+            <tr class="header">
+                <td>
+                   <asp:Label runat="server" ID="log" Text="FedChoice" ForeColor="#ffcc00" Font-Bold="true" Font-Size="XX-Large"></asp:Label> 
+                    <asp:Label runat="server" ID="Label1" Text="Bank" ForeColor="White" Font-Bold="true" Font-Size="XX-Large"></asp:Label> 
+                </td>
+            </tr>
+        <tr>
+            <td>
+                <table style="width:100%">
+                    <tr>
+                        <td>
+                <asp:Menu ID="navigation" CssClass="menu" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem Text="Account Operations" Value="Account Operations">
+                            <asp:MenuItem Text="Withdraw Money" Value="Withdraw Money" NavigateUrl="~/Account-Search.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Deposit Money" Value="Deposit Money" NavigateUrl="~/Account-Search.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Transfer" Value="Transfer" NavigateUrl="~/Account-Search.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Account  Search" Value="Account  Search" NavigateUrl="~/Account-Search.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Account Statement" Value="Account Statement" NavigateUrl="~/View Statement by No of transactions .aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Account Detials" Value="Account Detials" NavigateUrl="~/Account Status Cashier.aspx"></asp:MenuItem>
+
+                        
+                    </Items>
+                </asp:Menu>
+                 </td>
+            <td style="width: 50%; text-align: right;">
+                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" CausesValidation="false">Logout</asp:LinkButton>
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+            <tr class="content">
+                <td>
+                    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                        </div>
+                        </tr>
+    <tr >
+        <td>
+        <table class="header">
+            <tr>
+        <td>
+            <h5 class="h5">About Us</h5>
+
+        </td>
+                <td>
+                    <h5 class="h5">Services</h5> 
+                </td>
+                <td>
+                    <h5 class="h5">Contact Us</h5> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <p class="p">
+               FedChoice Bank was Founded on 14th june 2016 with the Objective of Providing
+              with the detail services based on Retail Banking Operations.The Retail Internet 
+              Banking of FedChoice Bank Offers a Plethora of Product and services,to cater 
+              its customers by providing certain animus services with an easy volving offers 
+              and ways to do the required job without hurdling the process
+            </p>
+                      
+        </td>
+                
+        <td>
+         
+        <p class="p"> Retails and Consumer Banking 
+         Personal Internet Banking 
+         Corporate Internet Banking 
+         Debit and Credit Cards 
+            </p> 
+        </td>
+        <td>
+             
+  <p class="p">Email:customer.service@Fedchoice.com 
+  Contact No:022-42406778,022-54567890 
+  Address:Corporate Office,Madam Cama Road, 
+  Nariman Point,Mumbai,Maharashtra 400021 </p>
+        </td>
+            </tr>
+            </table>
+            </td>
+    </tr>
+            </table>
+    
+    </form>
+</body>
+</html>
